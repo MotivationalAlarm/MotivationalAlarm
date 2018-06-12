@@ -1,0 +1,27 @@
+{
+  "name": "motivationalalarm",
+  "version": "1.0.0",
+  "description": "The Motivational Alarm app allow users to receive motivational audio at specific times throughout the day, increasing will power and determination to work on projects throughout the day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MotivationalAlarm/MotivationalAlarm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MotivationalAlarm/MotivationalAlarm/issues"
+  },
+  "homepage": "https://github.com/MotivationalAlarm/MotivationalAlarm#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.0"
+  }
+}
