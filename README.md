@@ -5,3 +5,4 @@ The Motivational Alarm app allow users to receive motivational audio at specific
 
 - __Lead Developer__: [Felipe Fernandez](https://github.com/HeyItsFelipe)
 - __Developer__: [Frederick Peavy](https://github.com/epeavy)
+- __Developer__: [William Ha](https://github.com/wvha)
