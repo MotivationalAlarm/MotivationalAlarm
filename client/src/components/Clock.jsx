@@ -24,9 +24,11 @@ class Clock extends React.Component {
   }
 
   render() {
+    let newDate = this.state.time.split(', ');
     return (
       <div>
-      Hello it's {this.state.time}
+      Hello it's <h1>{newDate[1]}</h1>
+      <h2>{newDate[0]}</h2>
       </div>
     )
   }
