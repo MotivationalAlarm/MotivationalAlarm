@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Clock.css';
 
 class Clock extends React.Component {
   constructor(props) {
@@ -26,9 +27,13 @@ class Clock extends React.Component {
   render() {
     let newDate = this.state.time.split(', ');
     return (
-      <div>
-      Hello it's <h1>{newDate[1]}</h1>
-      <h2>{newDate[0]}</h2>
+      <div id="body">
+        Hello it's 
+        <br />
+        <br />
+        <span id="clock">{newDate[1]}</span>
+        <br />
+        <p>{newDate[0]}</p>
       </div>
     )
   }
