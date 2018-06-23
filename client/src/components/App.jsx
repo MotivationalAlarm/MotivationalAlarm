@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import Clock from './Clock.jsx';
 import '../styles/App.css';
+import {Button} from 'semantic-ui-react';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,8 +23,8 @@ class App extends React.Component {
             <h1 className="title__text">Motivational Alarm</h1>
           </div>
           <div className="auth-buttons">
-            <button className="sign-up">Sign Up</button>
-            <button className="log-in">Log In</button>
+            <Button>Sign Up</Button>
+            <Button>Log In</Button>
           </div>
         </header>
         <div className="clock"><Clock /></div>
