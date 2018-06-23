@@ -15,22 +15,28 @@ class App extends React.Component {
   componentDidMount() {
   }
 
-  render () {
+  render() {
     return (
-      <div className="app">
-        <header>
-          <div className="title">
-            <h1 className="title__text">Motivational Alarm</h1>
+      <div className="ui page grid">
+        <header className="ui grid stackable sixteen wide column">
+          <div className="ten wide column header-container">
+            <h1>Motivational Alarm</h1>
           </div>
-          <div className="auth-buttons">
-            <Button>Sign Up</Button>
-            <Button>Log In</Button>
+          <div className="six wide column center aligned segment">
+            <Button className="">Sign Up</Button>
+            <Button className="">Log In</Button>
           </div>
         </header>
-        <div className="clock"><Clock /></div>
-        <div className="alarm-list">Alarm List</div>
-        <div className="form">Form</div>
-    </div>
+        <div className="ui grid stackable sixteen wide column">
+          <div className="ten wide column">
+              <div><Clock /></div>
+              <div className="form">Form</div>
+          </div>
+          <div className="six wide column">
+            <div className="alarm-list">Alarm List</div>
+          </div>
+        </div>
+      </div>
     )
   }
 }
