@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import Clock from './Clock.jsx';
+import AlarmList from './AlarmList.jsx';
 import '../styles/App.css';
 import {Button} from 'semantic-ui-react';
 
@@ -17,7 +18,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui page grid">
+      <div className="ui page grid app-container">
         <header className="ui grid stackable sixteen wide column">
           <div className="ten wide column header-container">
             <h1>Motivational Alarm</h1>
@@ -33,7 +34,7 @@ class App extends React.Component {
               <div className="form">Form</div>
           </div>
           <div className="six wide column">
-            <div className="alarm-list">Alarm List</div>
+            <div><AlarmList /></div>
           </div>
         </div>
       </div>
