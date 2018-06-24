@@ -7,6 +7,9 @@
   background-color: red;
 }
 
-.alarm-list {
-  background-color: blue;
+@media only screen and (max-width: 1919px) and (min-width: 1200px) {
+  .ui.page.grid.app-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
