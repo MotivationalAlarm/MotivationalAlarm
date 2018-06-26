@@ -5,4 +5,4 @@ services:
    - postgresql
 before_script:
    - psql -c 'create database travis_ci_test;' -U postgres
-   - cp database/database.yml.travis database/database.json
+   - cp db/database.yml.travis db/database.json
