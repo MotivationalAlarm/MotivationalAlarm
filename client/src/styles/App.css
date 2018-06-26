@@ -1,70 +1,15 @@
-.app {
-  display: grid;
-  width: 100%;
-  grid-template: "header header header header"
-                 "clock clock clock alarm-list"
-                 "clock clock clock alarm-list"
-                 "clock clock clock alarm-list"
-                 "form form form alarm-list"
-                 "form form form alarm-list";
-}
 
-header {
-  background-color: yellow;
-  grid-area: header;
+.header-container {
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-.title {
-  /*display:  inline-block;*/
-  margin-bottom: 10px;
-}
-
-.sign-up {
-  /*display: inline-block;*/
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px 8px 5px 8px;
-}
-
-.log-in {
-  /*display: inline-block;*/
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px 8px 5px 8px;
-}
-
-.clock {
-  background-color: green;
-  grid-area: clock;
-}
-
-.alarm-list {
-  background-color: red;
-  grid-area: alarm-list;
 }
 
 .form {
-  background-color: blue;
-  grid-area: form;
+  background-color: red;
 }
 
-@media screen and (min-width: 1000px) {
-  .app {
-    width: 90%;
-    margin-left: 5%;
-  }
-  header {
-    background-color: orange;
-  }
-  .title {
-    display: inline-block;
-  }
-  .sign-up {
-    display: inline-block;
-  }
-  .log-in {
-    display: inline-block;
+@media only screen and (max-width: 1919px) and (min-width: 1200px) {
+  .ui.page.grid.app-container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
