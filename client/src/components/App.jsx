@@ -34,7 +34,7 @@ class App extends React.Component {
               <div className="form">Form</div>
           </div>
           <div className="six wide column">
-            <div><AlarmList /></div>
+            <AlarmList />
           </div>
         </div>
       </div>
