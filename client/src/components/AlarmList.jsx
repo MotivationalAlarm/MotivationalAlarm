@@ -1,12 +1,29 @@
 import React from 'react';
 import $ from 'jquery';
 import '../styles/AlarmList.css';
+import AlarmListItem from './AlarmListItem.jsx';
 
 class AlarmList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      alarms: ['Alarm1', 'Alarm2', 'Alarm3']
+      alarms: [
+      {
+        time: '12:00',
+        youtubeAddress: 'https://www.youtube.com/watch?v=fLeJJPxua3E',
+        youtubeImage: 'null'
+      },
+      {
+        time: '2:30',
+        youtubeAddress: 'https://www.youtube.com/watch?v=49yUq3BWg5s',
+        youtubeImage: 'null'
+      },
+      {
+        time: '7:00',
+        youtubeAddress: 'https://www.youtube.com/watch?v=YlTV8nUlAnA',
+        youtubeImage: 'null'
+      }
+      ]
     }
   }
 
@@ -15,15 +32,11 @@ class AlarmList extends React.Component {
 
   render() {
     const alarmItems = this.state.alarms.map((alarm, index) =>
-      <li key={index}>{alarm}</li>
+      <AlarmListItem key={index} time={alarm.time} youtubeAddress={alarm.youtubeAddress} />
     );
     return (
-      <div className="ui grid page alarm-list-container">
-        <div className="ui grid stackable sixteen wide column">
-          <div>
-            <ul>{alarmItems}</ul>
-          </div>
-        </div>
+      <div className="ui page grid alarm-list">
+        {alarmItems}
       </div>
     )
   }
