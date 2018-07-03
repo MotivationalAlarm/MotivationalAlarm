@@ -4,7 +4,7 @@
   "description": "The Motivational Alarm app allow users to receive motivational audio at specific times throughout the day, increasing will power and determination to work on projects throughout the day.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-core/register -r ignore-styles  -r ./test/setup.js --recursive ./test/components --exit",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js"
   },
@@ -23,7 +23,15 @@
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15.4": "^1.0.5",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^11.11.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.17.5",
+    "react-addons-test-utils": "^15.6.2",
+    "sinon": "^6.0.1",
     "webpack": "^2.2.1",
     "webpack-cli": "^3.0.6"
   },
